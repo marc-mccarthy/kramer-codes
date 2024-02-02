@@ -5,22 +5,27 @@
 ### Installation
 
 1. Install [VSCodium](https://vscodium.com/) or [VSCode](https://code.visualstudio.com/).
-
 2. Install [Terraform](https://developer.hashicorp.com/terraform/install).
-
 3. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-
 4. Ensure that Terraform and AWS CLI are both installed and available in the Terminal:
 
 ```shell
 terraform -v
-```
-
-```shell
 aws --v
+code -v
 ```
 
-You should see the current versions of Terraform and AWS CLI installed.
+You should see the current versions installed as outputs.
+
+### Creating an AWS Account
+
+[AWS Account Creation](https://portal.aws.amazon.com/billing/signup) - Sign up for an Amazon Web Services account.
+
+### Creating an IAM user
+
+[IAM User Creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console) - Create a user for this workshop.
+
+Add the [AdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html) policy to your IAM user.
 
 ### Acquiring AWS Access and Secret keys
 
@@ -51,7 +56,7 @@ This will show you the services and architecture that you are instructing Terraf
 terraform apply
 ```
 
-This will apply your changes to GitHub after you confirm the selection.
+This will apply your changes to AWS after you confirm the selection.
 
 **Go to the URL that was output. It should point to the new bucket you created!**
 
