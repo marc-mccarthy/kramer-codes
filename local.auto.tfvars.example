@@ -1,0 +1,2 @@
+aws_region      = "AWS_REGION"     # aws region used
+aws_bucket_name = "BUCKET_NAME"    # aws bucket name
