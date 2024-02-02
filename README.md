@@ -32,7 +32,7 @@ Store these keys in a secure location. This is your authentication for your iden
 ## Terraform
 
 1. Create a `local.auto.tfvars` file from the [local.auto.tfvars.example](./local.auto.tfvars.example) file.
-2. Add your GitHub username and token here as strings.
+2. Add your preferred AWS Region here as a string.
 3. In your Terminal, ensure you are in the repo directory, then run in order:
 
 ```hcl
